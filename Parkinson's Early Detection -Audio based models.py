@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1pwGFlz_osKoVGYDq912Z-3OJ_VQPU0A2
 """
 
-!pip -q install librosa==0.10.1 soundfile pandas numpy scipy scikit-learn tqdm
+# !pip -q install librosa==0.10.1 soundfile pandas numpy scipy scikit-learn tqdm
 
 import numpy as np
 import pandas as pd
@@ -622,7 +622,7 @@ plt.show()
 
 """# TabPFN(v2)"""
 
-!pip install tabpfn
+# !pip install tabpfn
 
 try:
     from tabpfn import TabPFNClassifierV2 as TabPFNCls
@@ -734,7 +734,7 @@ plt.show()
 
 """# Hypertab"""
 
-pip install hypertab
+# pip install hypertab
 
 import inspect, torch, random
 from hypertab import HyperTabClassifier
@@ -848,7 +848,7 @@ plt.legend(); plt.tight_layout(); plt.show()
 
 """# TABNET"""
 
-pip install pytorch-tabnet
+# pip install pytorch-tabnet
 
 import numpy as np, pandas as pd, matplotlib.pyplot as plt, torch
 from sklearn.model_selection import train_test_split
