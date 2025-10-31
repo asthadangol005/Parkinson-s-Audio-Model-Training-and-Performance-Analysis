@@ -308,7 +308,7 @@ sns.heatmap(data[feature_cols].corr(numeric_only=True), cmap="coolwarm", center=
 plt.title("Feature Correlation Heatmap")
 plt.show()
 
-# orrelation of each feature with the target
+#Correlation of each feature with the target
 corr_with_target = data[feature_cols + ["status"]].corr(numeric_only=True)["status"].drop("status")
 corr_with_target = corr_with_target.sort_values(ascending=False)
 
@@ -442,12 +442,6 @@ plt.show()
 """# Random Forest Classifier"""
 
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import (
-    accuracy_score, roc_auc_score, average_precision_score,
-    confusion_matrix, classification_report, roc_curve, precision_recall_curve,
-    ConfusionMatrixDisplay
-)
-
 # ====  Prepare X, y from your dataframe `data` ====
 META = ["name", "status"]
 feature_cols = [c for c in data.columns if c not in META]
@@ -535,11 +529,6 @@ plt.show()
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from sklearn.metrics import (
-    accuracy_score, roc_auc_score, average_precision_score,
-    confusion_matrix, classification_report, roc_curve, precision_recall_curve,
-    ConfusionMatrixDisplay
-)
 
 
 META = ["name", "status"]
@@ -863,7 +852,6 @@ pip install pytorch-tabnet
 
 import numpy as np, pandas as pd, matplotlib.pyplot as plt, torch
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, roc_auc_score, average_precision_score, f1_score, confusion_matrix, classification_report, roc_curve, precision_recall_curve
 from sklearn.feature_selection import mutual_info_classif
 from pytorch_tabnet.tab_model import TabNetClassifier
 
@@ -1211,7 +1199,6 @@ print("Saved SAINT weights -> saint_model.pt")
 
 # ==== LOAD & PREDICT — SAINT ====
 import torch, torch.nn as nn
-import numpy as np, pandas as pd
 from joblib import load
 
 
