@@ -12,7 +12,7 @@ Early changes in voice can be one of the first indicators of Parkinson’s. This
 |-------|--------------|
 |Data Acquisition | Raw voice recordings of sustained vowel sounds |
 |Preprocessing | Noise removal, silence trimming, normalization |
-|Feature Extraction | MFCCs, jitter, shimmer, zero-crossing rate, spectral contrast |
+|Feature Extraction | MFCCs,RMS, zero-crossing rate, spectral contrast, Spectral centroid,F0 |
 |Model Training | SVM (RBF), Random Forest, Logistic Regression, TabPFN, SAINT-Lite, TabNet |
 |Evaluation | Accuracy, F1-Score, ROC-AUC, Precision-Recall, Confusion Matrix |
 | Best Performing Model | **SVM with RBF kernel** (best generalization on test data) |
